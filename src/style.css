@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  position: relative;
+  background: rgba(10, 12, 25, 0.9);
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Form elements */
+#form {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+#form input,
+#form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+#form input:focus,
+#form textarea:focus {
+  background: rgba(0, 255, 255, 0.1);
+}
+
+#form input::placeholder,
+#form textarea::placeholder {
+  color: #aaa;
+  opacity: 0.7;
+}
+
+/* Button styling */
+#form button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #0ff8ff, #00aaff);
+  color: #0b0d23;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px #0ff8ff77, 0 0 40px #00aaff44 inset;
+}
+
+#form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #0ff8ffaa, 0 0 50px #00aaff66 inset;
+}
+
+/* Textarea size */
+#message {
+  min-height: 150px;
+  resize: vertical;
+}

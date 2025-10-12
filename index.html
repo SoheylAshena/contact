@@ -6,7 +6,38 @@
     <title>Contact</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <form id="form">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+        <input
+          type="text"
+          id="subject"
+          name="custom-subject"
+          placeholder="Subject"
+          required
+        />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
