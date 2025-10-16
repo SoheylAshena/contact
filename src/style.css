@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Orbitron", sans-serif;
   padding: 0;
 }
 
@@ -30,10 +31,10 @@
   padding: 15px;
   margin: 15px 0;
   border-radius: 8px;
-  border: none;
-  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid cyan;
+  background: rgba(255, 255, 255, 0.09);
   color: #fff;
-  font-size: 16px;
+  font-size: 25px;
   outline: none;
 }
 
@@ -44,8 +45,7 @@
 
 #form input::placeholder,
 #form textarea::placeholder {
-  color: #aaa;
-  opacity: 0.7;
+  color: cyan;
 }
 
 /* Button styling */
@@ -56,14 +56,14 @@
   background: linear-gradient(135deg, #0ff8ff, #00aaff);
   color: #0b0d23;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 0 20px #0ff8ff77, 0 0 40px #00aaff44 inset;
 }
 
 #form button:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   box-shadow: 0 0 25px #0ff8ffaa, 0 0 50px #00aaff66 inset;
 }
 
